@@ -50,7 +50,7 @@
             <div class="mt-4 flex flex-col">
               Source Codes
               <div>
-                <a class="link mx-1" href="https://github.com/uys2000-projects/uplayer-mehmetuysal-dev-web"
+                <a class="link mx-1" href="https://github.com/uys2000-websites/uplayer-mehmetuysal-dev"
                   target="_blank">Web Site</a>
                 <a class="link mx-1" href="https://github.com/uys2000-projects/uplayer-mehmetuysal-dev"
                   target="_blank">Android</a>
