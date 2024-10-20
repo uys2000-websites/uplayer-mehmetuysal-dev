@@ -8,9 +8,23 @@
 
 <script lang="ts">
 import { RouterView } from 'vue-router'
+import { useAppStore } from './stores/app';
 export default {
   components: {
     RouterView
+  },
+  data() {
+    return {
+      appStore: useAppStore(),
+
+    }
+  },
+  beforeMount() {
+    const theme = localStorage.getItem("theme")
+    if (theme) {
+      this.appStore.theme = theme
+      document.body.setAttribute("data-theme", theme);
+    }
   }
 }
 </script>
