@@ -73,13 +73,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.links span::before {
-  content: "-> ";
-}
-
-.links span::after {
-  content: " <-";
-}
-</style>

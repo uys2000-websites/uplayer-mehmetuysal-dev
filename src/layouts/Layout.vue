@@ -24,7 +24,20 @@ export default {
     return {
       appStore: useAppStore()
     }
+  },
+  mounted() {
+    const adScript = document.createElement('script')
+    adScript.innerHTML = `aclib.runAutoTag({
+        zoneId: 'rmvblyfrsm',
+    });`
+    document.body.appendChild(adScript)
   }
+}
+declare global {
+  var aclib: {
+    runAutoTag: (...args: any) => Promise<any>
+    runBanner: (...args: any) => Promise<any>
+  };
 }
 </script>
 
